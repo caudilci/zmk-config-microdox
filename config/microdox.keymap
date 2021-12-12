@@ -24,22 +24,22 @@
         combos {
                 compatible = "zmk,combos";
                 combo_esc {
-                        timeout-ms = <50>;
+                        timeout-ms = <75e>;
                         key-positions = <0 1>;
                         bindings = <&kp ESC>;
                 };
                 combo_bksp {
-                        timeout-ms = <50>;
+                        timeout-ms = <75>;
                         key-positions = <8 9>;
                         bindings = <&kp BSPC>;
                 };
                 combo_entr {
-                        timeout-ms = <50>;
-                        key-positions = <29 30>;
+                        timeout-ms = <75>;
+                        key-positions = <28 29>;
                         bindings = <&kp RET>;
                 };
                 combo_tab {
-                        timeout-ms = <50>;
+                        timeout-ms = <75>;
                         key-positions = <20 21>;
                         bindings = <&kp TAB>;
                 };
