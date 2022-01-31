@@ -58,7 +58,7 @@
    &kp Q      &kp W      &kp F       &kp P       &kp B   &kp J &kp L        &lt 3 U        &lt 2 Y        &kp SINGLE_QUOTE
    &hm LGUI A &hm LALT R &hm LCTRL S &hm LSHFT T &kp G   &kp M &hm RSHFT N  &hm RCTRL E   &hm RALT I   &hm RGUI O
    &kp Z      &kp X      &kp C       &kp D       &kp V   &kp K &kp H        &kp COMMA     &kp DOT      &kp FSLH
-          &kp ESC &lt 1 SPACE &kp TAB &lt 2 RET &lt 3 BSPC &kp RALT
+          &lt 4 ESC &lt 1 SPACE &kp TAB &lt 2 RET &lt 3 BSPC &kp RALT
                         >;
                 };
                 nav_layer {
@@ -89,19 +89,21 @@
                         >;
                 };
 
-// This layer is unreachable until "tri layer state" is sorted out.
-// Leaving it here for completeness.
                 num_layer {
-// -----------------------------------------------------------------------------------------
-// |     |     |     |     |     |   |  A  |  7  |  8  |  9  |  D  |
-// |     |     |     |     |     |   |  B  |  4  |  5  |  6  |  E  |
-// |     |     |     |     |     |   |  C  |  1  |  2  |  3  |  F  |
-//             |     |     |     |   |  0  |  .  |     |
                         bindings = <
    &kp LBKT    &kp N7    &kp N8    &kp N9    &kp RBKT    &none        &none        &none        &none        &none
    &kp SEMI    &kp N4    &kp N5    &kp N6    &kp EQUAL   &none        &kp RSHFT    &kp RCTRL    &kp RALT     &kp RGUI
    &kp GRAVE   &kp N1    &kp N2    &kp N3    &kp BSLH    &none        &none        &none        &none        &none
                  &kp DOT      &kp N0       &kp MINUS     &none        &none        &none  
+                        >;
+                };
+
+                f_layer {
+                        bindings = <
+   &none        &none        &none        &none        &none       &kp F11      &kp F12      &kp F13      &kp F14      &kp 15
+   &kp LGUI     &kp LALT     &kp LCTRL    &kp LSHFT    &none       &kp F6       &kp F7       &kp F8       &kp F9      &kp F10
+   &none        &none        &none        &none        &none       &kp F1       &kp F2       &kp F3       &kp F4       &kp F5
+                                                &none      &none      &none    &none    &none    &none
                         >;
                 };
         };
